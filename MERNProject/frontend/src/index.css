@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', 'Oxygen','Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+h1{
+	margin-bottom:1em;
+	margin-top:1em;
+}
+#logo{
+	font-size:1.5em;
+}
+ul li{
+	margin-right:2em;
+	display:inline-block;
+	font-size:1.25em;
+}
+
+
+li a{
+	text-decoration:none;
+}
+main{
+	margin:0 auto;
+	padding-bottom:100px;
+}
+.row, form,.form-group {
+	max-width:1200px;
+	margin:0 auto;
+}
+form label, form {
+	text-align:left;
+}
+form label {
+	margin-right:0;
+}
+form .row{
+	margin-bottom:1em;
+}
+
+.row img{
+	max-width:100%;
+	width:90%;
+	max-height:100%;
+	height:60%;
+}
+.author div{
+	text-align:left;
+	margin-left:2em;
+	font-size:1.25em;
+}
+header>div, header nav{
+	display:inline-block;
+	font-size:1.25em;
+}
+header span{
+	color:red;
+}
+header{
+	padding-top:2em;
+	padding-bottom:2em;
+}
+header, footer{
+	width:100%;
+	background-color:rgb(188 245 205 / 50%);
+}
+footer{
+	position:absolute;
+	bottom:0;
+	padding-top:1em;
+	
+	
+}
+.App{
+	position:relative;
+}
