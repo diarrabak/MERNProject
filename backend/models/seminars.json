@@ -1,0 +1,40 @@
+[{
+  "_id": {
+    "$oid": "60b83f4a51b4181f0058bcae"
+  },
+  "users": [],
+  "topics": [],
+  "title": "Biology",
+  "content": "indangered species",
+  "place": "online",
+  "date": {
+    "$date": "2021-06-03T02:32:42.908Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60b8e7c05a98ff2ed47632d3"
+  },
+  "users": [],
+  "topics": [],
+  "title": "welcome",
+  "content": "where are you",
+  "date": {
+    "$date": "2021-06-22T00:00:00Z"
+  },
+  "place": "humber",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60b9072416ebf42520d3aabc"
+  },
+  "users": [],
+  "topics": [],
+  "title": "french",
+  "content": "vocabulary",
+  "date": {
+    "$date": "2021-06-26T00:00:00Z"
+  },
+  "place": "vanier",
+  "__v": 0
+}]
