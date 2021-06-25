@@ -13,7 +13,5 @@
       - Users
       - Roles
       - Seminars
-      - Backlog Seminars 
       - Topics
       - Reviews
-      - Subscriptions
