@@ -1,6 +1,6 @@
 # MERNProject Team-1
    ## This is a team project aiming at developing a website for a workshop.
-   ## The MERN (MongoDB, Express.js, React.js and Node) stack will be used to implement this projec
+   ## The MERN (MongoDB, Express.js, React.js and Node) stack will be used to implement this project
 
  ## Features
    - Login and register functionality, forgot your password etc. USERS 
