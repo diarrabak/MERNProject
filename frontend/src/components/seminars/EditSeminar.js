@@ -105,7 +105,7 @@ class EditSeminar extends React.Component {
 			  </div>*/}
 			  <div className="row">
 			  <div className="offset-sm-2 col-12 col-sm-4">
-			  <input type="submit" className="btn btn-success" value="Update" />
+			  <input type="submit" onClick={event =>  window.location.href='/seminar'} className="btn btn-success" value="Update" />
 			  </div>
 			  {/*Link back to seminar list
 			   <div className="col-12 col-sm-6">

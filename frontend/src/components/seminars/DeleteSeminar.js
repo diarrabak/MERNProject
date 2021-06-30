@@ -76,7 +76,7 @@ class DeleteSeminar extends React.Component {
 			
 				  <input 
 				  
-				  type="submit" className="btn btn-danger" value="Delete"/>
+				  type="submit" onClick={event =>  window.location.href='/seminar'} className="btn btn-danger" value="Delete"/>
 				  </div>
 				  </div>
 				  

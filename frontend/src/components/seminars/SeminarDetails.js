@@ -3,7 +3,7 @@ import React from 'react';
 const SeminarDetails = (props) => {
     return (
 	 <>
-         <h2 >{props.seminar.title} Details</h2>
+         <h2 >Details of {props.seminar.title} </h2>
        
             <div >
 			{/* <img src="soccer.jpeg" alt="Soccer player"/>*/}

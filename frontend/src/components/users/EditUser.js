@@ -16,7 +16,7 @@ class EditUser extends React.Component {
    }
    
    // onChange(e) {
-         // this.setState({[e.target.name]: e.target.value})
+   // this.setState({[e.target.name]: e.target.value})
     // }
 	//method appending the form data to the User fields
     submitUser(event) {
@@ -100,7 +100,7 @@ class EditUser extends React.Component {
 			  
 			  <div className="row">
 			  <div className="offset-sm-2 col-12 col-sm-4">
-			  <input type="submit" className="btn btn-success" value="Update" />
+			  <input type="submit" onClick={event =>  window.location.href='/user'} className="btn btn-success" value="Update" />
 			  </div>
 			  {/*Link back to User list
 			   <div className="col-12 col-sm-6">

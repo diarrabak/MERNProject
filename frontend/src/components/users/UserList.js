@@ -8,10 +8,10 @@ const UserList = (props) => {
         <ul className="list-group">
             <h2>Users</h2>
 			{/*Users are defined as state variable in the User component*/}
-            {props.users.map((item) => (
-               <li className="list-item"> 
+            {props.users.map((item,id) => (
+               <li className="list-item" key={id}> 
 			   {/*Each time a User is clicked, its details appears */}
-			        <a href="#!" className="list-item" key={item._id.toString()}
+			<a href="#!" className="list-item"
 					
                     onClick={props.updateCurrentUser.bind(this,item)}>{item.username}</a>
 				</li>

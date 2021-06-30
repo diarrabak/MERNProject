@@ -5,7 +5,7 @@ const SeminarList = (props) => {
     return ( 
     
         <ul className="list-group">
-            <h2>Current Seminars</h2>
+            {/*<h2>Current Seminars</h2>*/}
 			{/*seminars are defined as state variable in the seminar component*/}
             {props.seminars.map((item,id) => (
                <li className="list-item" key={id}> 

@@ -45,9 +45,10 @@ class UserForm extends React.Component {
 		<>
 		   <Header />
             <main>
-                <h1 >Create a new User</h1>
+                <h1 >Add a new User</h1>
 				{/*Form used to fill the User component*/}			
 				<form onSubmit={this.submitUser.bind(this)}>
+				
 			 <div className="form-group row">
 		       <label className="form-label col-12 col-sm-2" htmlFor="username">Username</label>
 		       <div className="col-12 col-sm-10">
@@ -92,43 +93,24 @@ class UserForm extends React.Component {
 		       </div>
 			  </div>
 			  
-			  {/*Since it is a many to many relationship, no need to include users and topics here*/}
-			  
-			  {/* <div className="form-group row">
-		       <label className="form-label  col-12 col-sm-2" htmlFor="users">User users</label>
-		       <div className="col-12 col-sm-10">
-		          <select multiple className="form-control" name="users" id="users" ref="users">
-				  <option value="">1</option>
-				  <option value="">2</option>
-				  <option value="">3</option>
-				  <option value="">4</option>
-				  </select>
-		       </div>
-			  </div>
-			   <div className="form-group row">
-		       <label className="form-label  col-12 col-sm-2" htmlFor="topics">User topics</label>
-		       <div className="col-12 col-sm-10">
-		          <select multiple className="form-control" name="topics" id="topics" ref="topics">
-				  <option value="">1</option>
-				  <option value="">2</option>
-				  <option value="">3</option>
-				  <option value="">4</option>
-				  </select>
-		       </div>
-			  </div>*/}
 			  <div className="row">
 			  <div className="offset-sm-2 col-12 col-sm-4">
-			  <input type="submit" className="btn btn-success" />
+			  <input type="submit" onClick={event =>  window.location.href='/user'} className="btn btn-success" />
 			  
 			  </div>
+			  </div>
+			  
+			  <div className="row">
+			  
 			  {/*Link back to User list*/}
-			  <div className="col-12 col-sm-6">
+			  <div className="offset-sm-2 col-12 col-sm-6">
                  <Link to="/Login" > Already registered? Sign In </Link>
-		     </div>
-			   <div className="col-12 col-sm-6">
+		      </div>
+			   <div className="col-12 col-sm-4">
                  <Link to="/User" > Back to User list </Link>
 		     </div>
 			 </div>
+			 
 		    </form>
 			
             </main>

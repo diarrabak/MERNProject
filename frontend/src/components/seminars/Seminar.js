@@ -84,7 +84,7 @@ class Seminar extends React.Component {
 	     //if(mongoose.Types.ObjectId.isValid(item.topics[i])){
 				 //console.log('id='+this.state.currentSeminarId);
 			// Seminar removal enpoint from our controllers
-		   axios.get('http://localhost:5000/topic/'+item.topics[i])
+		   axios.get('http://localhost:5000/topics/'+item.topics[i])
 		   .then((Response) => {
 				this.setState({
 				  topics:[...this.state.topics,Response.data],
@@ -137,12 +137,13 @@ class Seminar extends React.Component {
 		  
 		  <div className="row">
 		  {/*List of seminar from the state variable*/}
-	        <div className="seminars col-12 col-md-7"><SeminarList seminars={this.state.seminars}
+	        <div className="seminars col-12"><SeminarList seminars={this.state.seminars}
                updateCurrentSeminar={this.updateCurrentSeminar}/>
+			    <div className="seminar-details col-12"><SeminarDetails seminar={this.state.currentSeminar}  users={this.state.users} topics={this.state.topics} reviews={this.state.reviews} />
+			</div>
             </div>
 		  {/*Details of the selected seminar from state variable*/}
-            <div className="seminar-details col-12 col-md-5"><SeminarDetails seminar={this.state.currentSeminar}  users={this.state.users} topics={this.state.topics} reviews={this.state.reviews} />
-			</div>
+           
          </div>
 		
 		 <div className="row">

@@ -12,21 +12,21 @@ function Contact(){
 			 <div className="form-group row">
 		       <label className="form-label col-12 col-sm-2" htmlFor="fname">First name</label>
 		       <div className="col-12 col-sm-10">
-		          <input type="text" className="form-control" name="fname" id="fname" />
+		          <input type="text" className="form-control" name="fname" id="fname" required />
 		       </div>
 			  </div>
 			  
 			  <div className="form-group row">
 		       <label className="form-label  col-12 col-sm-2" htmlFor="lname">Last name</label>
 		       <div className="col-12 col-sm-10">
-		          <input type="text" className="form-control" name="lname" id="lname" />
+		          <input type="text" className="form-control" name="lname" id="lname" required/>
 		       </div>
 			  </div>
 			  
 			  <div className="form-group row">
 		       <label className="form-label  col-12 col-sm-2" htmlFor="email">Email</label>
 		       <div className="col-12 col-sm-10">
-		          <input type="email" className="form-control" name="email" id="email" />
+		          <input type="email" className="form-control" name="email" id="email" required/>
 		       </div>
 			  </div>
 			  
@@ -45,7 +45,7 @@ function Contact(){
 			  <div className="form-group row">
 		       <label className="form-label  col-12 col-sm-2" htmlFor="message">Message</label>
 		       <div className="col-12 col-sm-10">
-		          <textarea name="message" id="message" defaultValue={"Your text here"} className="form-control"></textarea>
+		          <textarea name="message" id="message" required defaultValue={"Your text here"} className="form-control"></textarea>
 		       </div>
 			  </div>
 			   <div className="row">

@@ -7,10 +7,10 @@ const RoleList = (props) => {
         <ul className="list-group">
             <h2>Roles</h2>
 			{/*Roles are defined as state variable in the Role component*/}
-            {props.roles.map((item) => (
-               <li className="list-item"> 
+            {props.roles.map((item,id) => (
+               <li className="list-item" key={id}> 
 			   {/*Each time a Role is clicked, its details appears */}
-			        <a href="#!" className="list-item" key={item._id.toString()}
+			        <a href="#!" className="list-item" 
 					
                     onClick={props.updateCurrentRole.bind(this,item)}>{item.role}</a>
 				</li>
